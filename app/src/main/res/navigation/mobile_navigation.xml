@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.wtw.whattheweather.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.wtw.whattheweather.ui.search.SearchFragment"
+        android:label="@string/title_search"
+        tools:layout="@layout/fragment_search" />
+
+    <fragment
+        android:id="@+id/navigation_upload"
+        android:name="com.wtw.whattheweather.ui.upload.UploadFragment"
+        android:label="@string/title_upload"
+        tools:layout="@layout/fragment_upload">
+
+        <action
+            android:id="@+id/action_navigation_upload_to_navigation_image_upload"
+            app:destination="@id/navigation_image_upload" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_umbrella"
+        android:name="com.wtw.whattheweather.ui.umbrella.UmbrellaFragment"
+        android:label="Umbrella"
+        tools:layout="@layout/fragment_umbrella" />
+
+    <fragment
+        android:id="@+id/navigation_mypage"
+        android:name="com.wtw.whattheweather.ui.mypage.MyPageFragment"
+        android:label="Upload"
+        tools:layout="@layout/fragment_my_page" />
+
+    <fragment
+        android:id="@+id/navigation_image_upload"
+        android:name="com.wtw.whattheweather.ui.upload.PictureUploadFragment"
+        android:label="Picture Upload"
+        tools:layout="@layout/fragment_picture_upload"/>
+
+</navigation>
