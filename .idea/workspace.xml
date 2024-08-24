@@ -99,7 +99,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c108fa5f-e5f3-46c9-88cd-10c78f3b731f" name="Changes" comment="feat : Retrofit Builder 정의">
+    <list default="true" id="c108fa5f-e5f3-46c9-88cd-10c78f3b731f" name="Changes" comment="feat : 홈 피드 기능 구현">
       <change afterPath="$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c37f9cf5706d9c9263929ada5818377b/unzipped-distribution/gradle-6.6.1/subprojects/ide/src/integTest/resources/org/gradle/plugins/ide/idea/IdeaIntegrationTest/overwritesExistingDependencies/root.iml" afterDir="false" />
       <change afterPath="$USER_HOME$/.gradle/caches/transforms-4/435be38f8324990cec484e03044db2a0/transformed/unzipped-distribution/gradle-8.6/platforms/ide/ide-plugins/src/integTest/resources/org/gradle/plugins/ide/idea/IdeaIntegrationTest/overwritesExistingDependencies/root.iml" afterDir="false" />
       <change afterPath="$USER_HOME$/.gradle/caches/transforms-4/69955912123c68eecd096b71c66ee211/transformed/unzipped-distribution/gradle-8.7/platforms/ide/ide-plugins/src/integTest/resources/org/gradle/plugins/ide/idea/IdeaIntegrationTest/overwritesExistingDependencies/root.iml" afterDir="false" />
@@ -109,8 +109,6 @@
       <change afterPath="$USER_HOME$/IdeaProjects/untitled/untitled.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../.gradle/caches/transforms-4/69955912123c68eecd096b71c66ee211/transformed/unzipped-distribution/gradle-8.7/platforms/ide/ide-plugins/src/integTest/resources/org/gradle/plugins/ide/idea/IdeaIntegrationTest/overwritesExistingDependencies/root.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/appInsightsSettings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/deviceManager.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/wtw/whattheweather/Application.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/wtw/whattheweather/model/FeedItemData.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/wtw/whattheweather/model/FeedUploadRequest.kt" afterDir="false" />
@@ -119,57 +117,28 @@
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/wtw/whattheweather/network/NetworkService.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/wtw/whattheweather/ui/home/FeedDetailInfoActivity.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/wtw/whattheweather/ui/mypage/MyPageViewModel.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/wtw/whattheweather/ui/search/SearchFeedFragment.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/wtw/whattheweather/ui/umbrella/UmbrellaViewModel.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/wtw/whattheweather/ui/upload/UploadResultFragment.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/java/com/wtw/whattheweather/util/HomeBindingAdapter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/wtw/whattheweather/util/HomeFeedRecyclerAdapter.kt" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/app_btn_bg.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/dropdown_item_bg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/feed_item_layout_bg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/map_label_icon.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_feed_detail_info.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/dropdown_item_layout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_search_feed.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_upload_result.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/home_feed_item_layout.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/map_label_info_layout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/xml/file_path.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/navEditor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/navEditor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/other.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wtw/whattheweather/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wtw/whattheweather/MainActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wtw/whattheweather/WeatherActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wtw/whattheweather/WeatherActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wtw/whattheweather/ui/home/HomeFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wtw/whattheweather/ui/home/HomeFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wtw/whattheweather/ui/home/HomeViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wtw/whattheweather/ui/home/HomeViewModel.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wtw/whattheweather/ui/mypage/MyPageFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wtw/whattheweather/ui/mypage/MyPageFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wtw/whattheweather/ui/search/SearchFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wtw/whattheweather/ui/search/SearchFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wtw/whattheweather/ui/search/SearchViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wtw/whattheweather/ui/search/SearchViewModel.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wtw/whattheweather/ui/umbrella/UmbrellaFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wtw/whattheweather/ui/umbrella/UmbrellaFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wtw/whattheweather/ui/upload/PictureUploadFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wtw/whattheweather/ui/upload/PictureUploadFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wtw/whattheweather/ui/upload/UploadFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wtw/whattheweather/ui/upload/UploadFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wtw/whattheweather/ui/upload/UploadViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wtw/whattheweather/ui/upload/UploadViewModel.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_weather.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_weather.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_my_page.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_my_page.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_picture_upload.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_picture_upload.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_search.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_search.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_umbrella.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_umbrella.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_upload.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_upload.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/bottom_nav_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/bottom_nav_menu.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/mobile_navigation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/mobile_navigation.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradle/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/libs.versions.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -464,7 +433,55 @@
       <option name="project" value="LOCAL" />
       <updated>1724525642554</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat : 지도 label icon 파일 추가">
+      <option name="closed" value="true" />
+      <created>1724525677562</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1724525677562</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat : 날씨 사진 업로드 기능 구현">
+      <option name="closed" value="true" />
+      <created>1724525734923</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1724525734923</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat : 장소 검색 및 피드 기능 구현">
+      <option name="closed" value="true" />
+      <created>1724525768253</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1724525768253</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat : 개발 환경 세팅">
+      <option name="closed" value="true" />
+      <created>1724525820124</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1724525820124</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feat : 개발 환경 세팅">
+      <option name="closed" value="true" />
+      <created>1724525827641</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1724525827641</updated>
+    </task>
+    <task id="LOCAL-00011" summary="feat : 홈 피드 기능 구현">
+      <option name="closed" value="true" />
+      <created>1724525960057</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1724525960057</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -473,7 +490,12 @@
     <MESSAGE value="feat : 앱 logo 파일 추가" />
     <MESSAGE value="feat : 로딩 lottie 파일 추가" />
     <MESSAGE value="feat : Retrofit Builder 정의" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat : Retrofit Builder 정의" />
+    <MESSAGE value="feat : 지도 label icon 파일 추가" />
+    <MESSAGE value="feat : 날씨 사진 업로드 기능 구현" />
+    <MESSAGE value="feat : 장소 검색 및 피드 기능 구현" />
+    <MESSAGE value="feat : 개발 환경 세팅" />
+    <MESSAGE value="feat : 홈 피드 기능 구현" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat : 홈 피드 기능 구현" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
