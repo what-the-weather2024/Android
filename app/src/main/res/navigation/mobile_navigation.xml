@@ -15,7 +15,24 @@
         android:id="@+id/navigation_search"
         android:name="com.wtw.whattheweather.ui.search.SearchFragment"
         android:label="@string/title_search"
-        tools:layout="@layout/fragment_search" />
+        tools:layout="@layout/fragment_search">
+
+        <action
+            android:id="@+id/action_navigation_search_to_navigation_search_feed"
+            app:destination="@id/navigation_search_feed"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_search_feed"
+        android:name="com.wtw.whattheweather.ui.search.SearchFeedFragment"
+        android:label="SearchFeed"
+        tools:layout="@layout/fragment_search_feed"
+        >
+        <argument
+            android:name="searchFeedArgument"
+            app:argType="string" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_upload"
@@ -45,6 +62,26 @@
         android:id="@+id/navigation_image_upload"
         android:name="com.wtw.whattheweather.ui.upload.PictureUploadFragment"
         android:label="Picture Upload"
-        tools:layout="@layout/fragment_picture_upload"/>
+        tools:layout="@layout/fragment_picture_upload">
+
+        <action
+            android:id="@+id/action_navigation_image_upload_to_navigation_upload_result"
+            app:destination="@id/navigation_upload_result"/>
+
+        <argument
+            android:name="pictureUploadArgument"
+            app:argType="string" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_upload_result"
+        android:name="com.wtw.whattheweather.ui.upload.UploadResultFragment"
+        android:label="UploadResult"
+        tools:layout="@layout/fragment_upload_result" >
+        <argument
+            android:name="feedUploadArgument"
+            app:argType="com.wtw.whattheweather.model.FeedItemData" />
+    </fragment>
 
 </navigation>
