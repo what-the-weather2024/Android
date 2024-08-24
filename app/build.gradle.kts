@@ -1,6 +1,17 @@
+import com.android.build.gradle.internal.cxx.configure.gradleLocalProperties
+import java.io.FileInputStream
+import java.util.Properties
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.androidx.navigation.safeargs)
+    kotlin("kapt")
+    id("kotlin-parcelize")
+}
+
+val properties = Properties().apply {
+    load(FileInputStream(rootProject.file("local.properties")))
 }
 
 android {
@@ -15,6 +26,8 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField("String", "KAKAO_MAP_KEY", getApiKey("KAKAO_MAP_KEY"))
     }
 
     buildTypes {
@@ -24,6 +37,12 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            buildConfigField("String", "KAKAO_MAP_KEY", getApiKey("KAKAO_MAP_KEY"))
+        }
+        debug {
+            isMinifyEnabled = false
+            buildConfigField("String", "KAKAO_MAP_KEY", getApiKey("KAKAO_MAP_KEY"))
+
         }
     }
     compileOptions {
@@ -35,7 +54,12 @@ android {
     }
     buildFeatures {
         viewBinding = true
+        dataBinding = true
     }
+}
+
+fun getApiKey(propertyKey: String): String {
+    return gradleLocalProperties(rootDir,providers).getProperty(propertyKey)
 }
 
 dependencies {
@@ -50,9 +74,21 @@ dependencies {
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
     implementation(libs.androidx.databinding.runtime)
+    implementation(libs.play.services.location)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
+    implementation(libs.coil)
+    implementation(libs.android)
+    implementation(libs.v2.all)
+    implementation(libs.v2.user)
+
+    implementation(libs.lottie)
+
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
+
+    implementation(libs.gson)
 
 }
