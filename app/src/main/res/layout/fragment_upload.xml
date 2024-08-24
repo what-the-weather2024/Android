@@ -3,8 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
+        <variable
+            name="viewModel"
+            type="com.wtw.whattheweather.ui.upload.UploadViewModel" />
+
+    </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:background="@color/mainPrimary"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".ui.upload.UploadFragment">
@@ -16,15 +23,18 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="48dp">
 
             <TextView
+                android:textSize="24sp"
+                android:gravity="center"
+                android:text="현재 위치 인증하기"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
         </androidx.appcompat.widget.Toolbar>
 
-        <FrameLayout
+        <com.kakao.vectormap.MapView
             android:id="@+id/fragment_upload_map_frame"
             app:layout_constraintTop_toBottomOf="@id/fragment_upload_toolbar"
             app:layout_constraintStart_toStartOf="parent"
@@ -34,15 +44,22 @@
             android:layout_height="300dp"/>
 
         <TextView
+            android:text="@{viewModel.selectedLocation}"
             android:layout_marginTop="24dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:lineSpacingExtra="5sp"
             app:layout_constraintTop_toBottomOf="@id/fragment_upload_map_frame"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
         <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/app_btn_bg"
+            android:text="예, 맞아요"
             android:layout_marginBottom="14dp"
             android:id="@+id/fragment_upload_location_confirm_btn"
             app:layout_constraintStart_toStartOf="parent"
@@ -52,11 +69,14 @@
             android:layout_height="wrap_content"/>
 
         <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/app_btn_bg"
+            android:text="아니오, 다시 검색할게요"
             android:id="@+id/fragment_upload_re_search_location_btn"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
             android:layout_marginBottom="14dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
