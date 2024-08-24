@@ -2,10 +2,12 @@ package com.wtw.whattheweather
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.kakao.sdk.common.util.Utility
 import com.wtw.whattheweather.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -24,10 +26,11 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
+        Log.e("keyHash", Utility.getKeyHash(this))
+
         binding.mainSocialLoginBtn.setOnClickListener {
             val intent = Intent(this, WeatherActivity::class.java)
             startActivity(intent)
-
         }
     }
 
