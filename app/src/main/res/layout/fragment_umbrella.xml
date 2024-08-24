@@ -3,15 +3,19 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <data>
+        <variable
+            name="viewModel"
+            type="com.wtw.whattheweather.ui.umbrella.UmbrellaViewModel" />
+    </data>
 
-    <FrameLayout
+    <com.kakao.vectormap.MapView
+        android:id="@+id/umbrella_map_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".ui.umbrella.UmbrellaFragment">
 
 
 
-
-
-    </FrameLayout>
+    </com.kakao.vectormap.MapView>
 </layout>
