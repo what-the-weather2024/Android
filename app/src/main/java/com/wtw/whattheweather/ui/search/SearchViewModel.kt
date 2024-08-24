@@ -1,13 +1,10 @@
 package com.wtw.whattheweather.ui.search
 
-import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
 class SearchViewModel : ViewModel() {
 
-    private val _text = MutableLiveData<String>().apply {
-        value = "This is dashboard Fragment"
-    }
-    val text: LiveData<String> = _text
+    val searchKeyword = MutableLiveData("")
+    val searchWeatherInfo = MutableLiveData("")
 }
