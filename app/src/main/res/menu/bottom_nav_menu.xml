@@ -21,9 +21,4 @@
         android:icon="@drawable/umbrella_icon"
         android:title="우산"/>
 
-    <item
-        android:id="@+id/navigation_mypage"
-        android:icon="@drawable/my_page_icon"
-        android:title="내 정보"/>
-
 </menu>
