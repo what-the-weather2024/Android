@@ -2,6 +2,7 @@ package com.wtw.whattheweather.network
 
 import com.wtw.whattheweather.model.FeedItemData
 import com.wtw.whattheweather.model.UmbrellaItemData
+import com.wtw.whattheweather.model.WeatherResponseData
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
 import retrofit2.Response
@@ -29,11 +30,11 @@ interface NetworkService {
 
     ) : Response<List<UmbrellaItemData>>
 
-    @GET("")
+    @GET("/api/weathers")
     suspend fun getWeatherInfo(
-        @Query ("city") city: String,
-        @Query ("district") district: String
-    ) : Response<FeedItemData>
+        @Query ("si") si: String,
+        @Query ("gu") gu: String
+    ) : Response<WeatherResponseData>
 
     @Multipart
     @POST("api/feed")
