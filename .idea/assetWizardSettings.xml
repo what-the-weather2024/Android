@@ -301,8 +301,8 @@
                         <option name="values">
                           <map>
                             <entry key="assetSourceType" value="FILE" />
-                            <entry key="outputName" value="map_label_icon_2" />
-                            <entry key="sourceFile" value="C:\Users\가람\Downloads\map_label_icon_2.svg" />
+                            <entry key="outputName" value="back_btn_icon" />
+                            <entry key="sourceFile" value="C:\Users\가람\Downloads\back_btn_icon.svg" />
                           </map>
                         </option>
                       </PersistentState>
