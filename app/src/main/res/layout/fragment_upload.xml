@@ -23,9 +23,11 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_width="match_parent"
-            android:layout_height="48dp">
+            android:layout_height="wrap_content">
 
             <TextView
+                android:includeFontPadding="false"
+                android:fontFamily="@font/pretendard_bold"
                 android:textSize="24sp"
                 android:gravity="center"
                 android:text="현재 위치 인증하기"
@@ -35,30 +37,52 @@
         </androidx.appcompat.widget.Toolbar>
 
         <com.kakao.vectormap.MapView
+            android:layout_marginTop="14dp"
             android:id="@+id/fragment_upload_map_frame"
             app:layout_constraintTop_toBottomOf="@id/fragment_upload_toolbar"
+            app:layout_constraintBottom_toTopOf="@id/upload_address_text"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
 
             android:layout_width="match_parent"
-            android:layout_height="300dp"/>
+            android:layout_height="0dp"/>
 
         <TextView
+            android:textSize="16sp"
+            android:includeFontPadding="false"
+            android:fontFamily="@font/pretendard_semi_bold"
+            android:id="@+id/upload_address_text"
             android:text="@{viewModel.selectedLocation}"
             android:layout_marginTop="24dp"
-            android:layout_marginStart="18dp"
-            android:layout_marginEnd="18dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="14dp"
             android:lineSpacingExtra="5sp"
             app:layout_constraintTop_toBottomOf="@id/fragment_upload_map_frame"
+            app:layout_constraintBottom_toTopOf="@id/address_confirm_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:fontFamily="@font/pretendard_medium"
+            android:text="이 주소가 맞으신가요?"
+            android:layout_marginBottom="14dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:id="@+id/address_confirm_text"
+            app:layout_constraintBottom_toTopOf="@id/fragment_upload_location_confirm_btn"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
         <androidx.appcompat.widget.AppCompatButton
+            android:fontFamily="@font/pretendard_medium"
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
-            android:background="@drawable/app_btn_bg"
+            android:background="@drawable/upload_address_confirm_btn_bg"
             android:text="예, 맞아요"
             android:layout_marginBottom="14dp"
             android:id="@+id/fragment_upload_location_confirm_btn"
@@ -69,6 +93,7 @@
             android:layout_height="wrap_content"/>
 
         <androidx.appcompat.widget.AppCompatButton
+            android:fontFamily="@font/pretendard_medium"
             android:background="@drawable/app_btn_bg"
             android:text="아니오, 다시 검색할게요"
             android:id="@+id/fragment_upload_re_search_location_btn"
