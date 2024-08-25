@@ -19,6 +19,7 @@
             android:textSize="24sp"
             android:layout_marginTop="24dp"
             android:layout_marginStart="20dp"
+            android:layout_marginEnd="10dp"
             android:text="@{data.name}"
             android:id="@+id/map_label_info_title_text"
             app:layout_constraintTop_toTopOf="parent"
@@ -35,12 +36,29 @@
             android:layout_marginTop="24dp"
             android:layout_marginStart="20dp"
             android:layout_marginBottom="24dp"
+            android:layout_marginEnd="12dp"
             android:id="@+id/map_label_info_phone_number_text"
             app:layout_constraintTop_toBottomOf="@id/map_label_info_title_text"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/umbrella_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginEnd="10dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:textSize="16sp"
+            android:fontFamily="@font/pretendard_medium"
+            android:background="@drawable/upload_address_confirm_btn_bg"
+            android:text="우산 빌리기"
+            android:id="@+id/umbrella_btn"
+            app:layout_constraintTop_toBottomOf="@id/map_label_info_title_text"
+            app:layout_constraintStart_toEndOf="@id/map_label_info_phone_number_text"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

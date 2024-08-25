@@ -99,26 +99,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c108fa5f-e5f3-46c9-88cd-10c78f3b731f" name="Changes" comment="feat : primary 색상 변경">
+    <list default="true" id="c108fa5f-e5f3-46c9-88cd-10c78f3b731f" name="Changes" comment="feat : 개발 환경 수정">
       <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/upload_address_confirm_btn_bg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wtw/whattheweather/network/NetworkService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wtw/whattheweather/network/NetworkService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wtw/whattheweather/ui/search/SearchFeedFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wtw/whattheweather/ui/search/SearchFeedFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wtw/whattheweather/ui/search/SearchFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wtw/whattheweather/ui/search/SearchFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/wtw/whattheweather/ui/upload/PictureUploadFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/wtw/whattheweather/ui/upload/PictureUploadFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_feed_detail_info.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_feed_detail_info.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_weather.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_weather.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/dropdown_item_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/dropdown_item_layout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_picture_upload.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_picture_upload.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_search.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_search.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_search_feed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_search_feed.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_upload.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_upload.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_upload_result.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_upload_result.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/home_feed_item_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/home_feed_item_layout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/map_label_info_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/map_label_info_layout.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -672,19 +656,82 @@
       <option name="project" value="LOCAL" />
       <updated>1724546560485</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="feat : Text에 폰트, size 적용">
+      <option name="closed" value="true" />
+      <created>1724546687165</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1724546687165</updated>
+    </task>
+    <task id="LOCAL-00039" summary="feat : 뒤로가기 기능 추가">
+      <option name="closed" value="true" />
+      <created>1724546706075</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1724546706075</updated>
+    </task>
+    <task id="LOCAL-00040" summary="feat : 주소 확인 버튼 background drawable 추가">
+      <option name="closed" value="true" />
+      <created>1724546738367</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1724546738367</updated>
+    </task>
+    <task id="LOCAL-00041" summary="feat : 서울시만 선택되어 있는 spinner 추가">
+      <option name="closed" value="true" />
+      <created>1724546764182</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1724546764182</updated>
+    </task>
+    <task id="LOCAL-00042" summary="feat : TextView에 폰트 적용">
+      <option name="closed" value="true" />
+      <created>1724546793803</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1724546793803</updated>
+    </task>
+    <task id="LOCAL-00043" summary="feat : Ripple 효과 제거">
+      <option name="closed" value="true" />
+      <created>1724546821632</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1724546821632</updated>
+    </task>
+    <task id="LOCAL-00044" summary="feat : Strings 파일에 resource 추가">
+      <option name="closed" value="true" />
+      <created>1724546850067</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1724546850067</updated>
+    </task>
+    <task id="LOCAL-00045" summary="feat : 날씨 조회 API 추가">
+      <option name="closed" value="true" />
+      <created>1724546885087</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1724546885087</updated>
+    </task>
+    <task id="LOCAL-00046" summary="feat : 개발 환경 수정">
+      <option name="closed" value="true" />
+      <created>1724546904256</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1724546904256</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat : 피드 상세 화면 기능 구현" />
-    <MESSAGE value="feat : 지도의 label 클릭 시 보여지는 BottomSheet Dialog 디자인" />
-    <MESSAGE value="feat : 우산 대여소 목록 조회 기능 구현" />
-    <MESSAGE value="feat : 주소 목록 dropdown drawable 파일 추가" />
-    <MESSAGE value="feat : Kakao SDK 초기화를 위한 Application Class 정의" />
-    <MESSAGE value="feat : App 메인 Color 정의" />
-    <MESSAGE value="feat : Feed Item layout 정의" />
-    <MESSAGE value="feat : Home Binding Adapter 정의" />
-    <MESSAGE value="feat : Bottom Sheet Dialog Style 정의" />
     <MESSAGE value="feat : 서울시 구 목록 Array에 선언" />
     <MESSAGE value="feat : Bottom Navigation View 정의" />
     <MESSAGE value="feat : Button Background Drawable 정의" />
@@ -701,7 +748,16 @@
     <MESSAGE value="feat : 이미지 업로드 frame Background Drawable 정의" />
     <MESSAGE value="feat : 뒤로 가기 버튼 icon 추가" />
     <MESSAGE value="feat : primary 색상 변경" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat : primary 색상 변경" />
+    <MESSAGE value="feat : Text에 폰트, size 적용" />
+    <MESSAGE value="feat : 뒤로가기 기능 추가" />
+    <MESSAGE value="feat : 주소 확인 버튼 background drawable 추가" />
+    <MESSAGE value="feat : 서울시만 선택되어 있는 spinner 추가" />
+    <MESSAGE value="feat : TextView에 폰트 적용" />
+    <MESSAGE value="feat : Ripple 효과 제거" />
+    <MESSAGE value="feat : Strings 파일에 resource 추가" />
+    <MESSAGE value="feat : 날씨 조회 API 추가" />
+    <MESSAGE value="feat : 개발 환경 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat : 개발 환경 수정" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
