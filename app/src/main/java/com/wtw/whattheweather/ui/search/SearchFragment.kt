@@ -8,14 +8,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
-import androidx.core.content.res.ResourcesCompat
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import com.wtw.whattheweather.R
 import com.wtw.whattheweather.databinding.FragmentSearchBinding
-import com.wtw.whattheweather.network.RetrofitBuilder.networkService
 
 class SearchFragment : Fragment() {
 
@@ -46,8 +44,6 @@ class SearchFragment : Fragment() {
 
                 this@SearchFragment.findNavController().navigate(SearchFragmentDirections.actionNavigationSearchToNavigationSearchFeed(searchFeedArgument = viewModel.searchKeyword.value!!.toString()))
 
-
-
             }
 
         }
@@ -57,14 +53,15 @@ class SearchFragment : Fragment() {
     override fun onResume() {
         super.onResume()
 
-        val jobArray = resources.getStringArray(R.array.district_array)
-        val jobArrayAdapter = ArrayAdapter(mContext, R.layout.dropdown_item_layout, jobArray)
-        binding.selectCityAutoCompleteTextView.setAdapter(jobArrayAdapter)
-//        binding.selectCityAutoCompleteTextView.setDropDownBackgroundDrawable(ResourcesCompat.getDrawable(
-//            resources,R.drawable.dropdown_menu_bg,null
-//        ))
+        val cityArray = resources.getStringArray(R.array.city_array)
+        val cityArrayAdapter = ArrayAdapter(mContext, R.layout.dropdown_item_layout, cityArray)
+        binding.selectCityAutoCompleteTextView.setAdapter(cityArrayAdapter)
 
-        binding.selectCityAutoCompleteTextView.addTextChangedListener(object : TextWatcher {
+        val districtArray = resources.getStringArray(R.array.district_array)
+        val districtArrayAdapter = ArrayAdapter(mContext, R.layout.dropdown_item_layout, districtArray)
+        binding.selectGuAutoCompleteTextView.setAdapter(districtArrayAdapter)
+
+        binding.selectGuAutoCompleteTextView.addTextChangedListener(object : TextWatcher {
             override fun afterTextChanged(s: Editable?) {
 
                 viewModel.searchKeyword.value = s.toString()
