@@ -78,6 +78,10 @@ class PictureUploadFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        binding.pictureUploadBackBtn.setOnClickListener {
+            requireActivity().onBackPressed()
+        }
+
         binding.imageUploadFrame.setOnClickListener {
 
             if (ContextCompat.checkSelfPermission(mContext, Manifest.permission.CAMERA)

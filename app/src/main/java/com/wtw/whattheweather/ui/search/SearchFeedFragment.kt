@@ -47,6 +47,11 @@ class SearchFeedFragment : Fragment() {
         viewModel.searchKeyword.value = args.searchFeedArgument
 
         getFeedList(viewModel.searchKeyword.value!!)
+        getWeatherInfo(viewModel.searchKeyword.value!!)
+
+        binding.searchFeedBackBtn.setOnClickListener {
+            requireActivity().onBackPressed()
+        }
 
     }
 
@@ -72,15 +77,15 @@ class SearchFeedFragment : Fragment() {
     private fun getWeatherInfo(searchKeyword: String) {
 
         lifecycleScope.launch {
-            val list = networkService.getWeatherInfo("서울특별시",searchKeyword)
+            val response = networkService.getWeatherInfo("서울특별시",searchKeyword)
 
-            if(list.isSuccessful) {
-
-
+            if(response.isSuccessful) {
+                val responseBody = response.body()
+                viewModel.searchWeatherInfo.value = responseBody?.weatherStatus + " " + responseBody?.temperature + "'C"
 
             }
             else {
-                Log.e("errorBody",list.errorBody().toString())
+                Log.e("errorBody",response.errorBody().toString())
 
             }
         }
