@@ -4,6 +4,7 @@
     <string name="title_home">Home</string>
     <string name="title_search">Search</string>
     <string name="title_upload">Upload</string>
+    <string name="search_feed_address_text">서울특별시 %s</string>
 
     <string-array name="city_array">
         <item>서울특별시</item>
