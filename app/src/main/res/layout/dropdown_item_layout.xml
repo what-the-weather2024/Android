@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <TextView
+    android:fontFamily="@font/pretendard_medium"
     android:background="@drawable/dropdown_item_bg"
     android:id="@+id/item_text"
     android:paddingStart="17dp"
