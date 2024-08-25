@@ -156,7 +156,7 @@ class UmbrellaFragment : Fragment() {
                     umbrellaItemList = it
 
                     umbrellaItemList?.forEachIndexed { index, umbrellaItem ->
-                        val styles = kakaoMap.labelManager?.addLabelStyles(LabelStyles.from(LabelStyle.from(R.drawable.map_label_icon)))
+                        val styles = kakaoMap.labelManager?.addLabelStyles(LabelStyles.from(LabelStyle.from(R.drawable.map_label_img)))
 
                         Log.e("$index umbrella", umbrellaItem.toString())
                         val options = LabelOptions.from(LatLng.from(umbrellaItem.latitude,umbrellaItem.longitude)).setStyles(styles)
